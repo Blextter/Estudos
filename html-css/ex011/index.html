@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+</head>
+
+<body>
+    <h1>
+        Reproduzindo Áudio
+    </h1>
+
+    <hr>
+
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5.
+    </p>
+
+    <audio src="midia/Haddad.mp3" controls autoplay></audio>
+
+    <p>
+        Podemos adicionar áudio de uma maneira mais compatível por outra maneira, aninhando a tag &lt;source&gt; dentro
+        de &lt;audio&gt; e colocando vários formatos de arquivos.
+    </p>
+
+    <audio controls loop>
+        <source src="midia/Haddad.mp3" type="audio/mpeg">
+        <source src="midia/Haddad.ogg" type="audio/ogg">
+        <source src="midia/Haddad.wav" type="audio/wav">
+        <p>Não foi possível executar o arquivo de áudio</p>
+    </audio>
+</body>
+
+</html>

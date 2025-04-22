@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(172, 240, 192);
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.349);
+            border-radius: 5px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.349);
+            border-radius: 7px;
+        }
+
+        article {
+            background-color: rgb(203, 255, 227);
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        article>aside {
+            background-color: rgb(155, 196, 174);
+        }
+
+        header>hr {
+            border-color: rgb(5, 29, 16);
+        }
+
+        nav {
+            background-color: rgb(155, 196, 174);
+            padding: 3px;
+            border-radius: 7px;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgb(5, 29, 16);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Meu Site
+        </h1>
+
+        <hr>
+
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <h2>
+                Esporte
+            </h2>
+        </section>
+
+        <section>
+            <article id="noticias">
+                <h2>
+                    Notícia sobre o Brasileirão
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, sequi repellat atque, quod saepe
+                    eligendi repudiandae voluptatibus harum voluptatum assumenda asperiores accusamus quia? Natus veniam
+                    minima cumque inventore recusandae. Placeat? Lorem ipsum dolor sit amet consectetur, adipisicing
+                    elit. Omnis deserunt ipsam molestias perferendis modi, distinctio esse nostrum dolor, ullam laborum
+                    saepe tempore sunt, error facilis. Adipisci in magnam est. Laboriosam. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Officiis nihil earum, reprehenderit cum voluptas molestias laudantium
+                    deserunt quam aspernatur quos quia optio esse dolores quas architecto odit officia atque ipsa.
+                </p>
+
+                <aside>
+                    <p>
+                        Artigo escrito por Leandro Damião
+                    </p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Desenvolvido pelo Curso Em Video
+        </p>
+    </footer>
+</body>
+
+</html>

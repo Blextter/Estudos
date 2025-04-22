@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../d002/favicon.ico" type="image/x-icon">
+    <title>Meus vídeos</title>
+</head>
+
+<body>
+
+    <h1>
+        Videos legais para assistir
+    </h1>
+
+    <div class="imagens1">
+        <a href="video1.html"><img src="imagens/thumbnail-1.jpg" alt="Super Grêmio"></a>
+        <a href="video2.html"><img src="imagens/thumbnail-2.jpg" alt="Edenilson 41 Anos"></a>
+    </div>
+    <div class="imagens2">
+        <a href="video3.html"><img src="imagens/thumbnail-3.jpg" alt="Meu Tricolor ta jogando demais"></a>
+        <a href="video4.html"><img src="imagens/thumbnail-4.jpg" alt="Fala Zezé, bom dia cara"></a>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    // Atribuí as tags HTML para uma variável
+    var h1Element = document.querySelector("h1");
+    var bodyBackground = document.querySelector("body");
+
+    // Verifica se o tema preferido do usuário é escuro (DARK = TRUE)
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    if (prefersDarkScheme.matches) {
+        h1Element.style.color = "white";
+        bodyBackground.style.backgroundColor = "#121212";
+    } else {
+        h1Element.style.color = "black";
+        bodyBackground.style.backgroundColor = "white";
+    }
+
+    // Você também pode adicionar um listener para detectar mudanças no tema (DARK = TRUE)
+    prefersDarkScheme.addListener((e) => {
+        if (e.matches) {
+            h1Element.style.color = "white";
+            bodyBackground.style.backgroundColor = "#121212";
+        } else {
+            h1Element.style.color = "black";
+            bodyBackground.style.backgroundColor = "white";
+        }
+    });
+
+</script>
+
+<style>
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+    }
+
+    .imagens1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagens2 {
+        display: flex;
+        justify-content: center;
+    }
+</style>

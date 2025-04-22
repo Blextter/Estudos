@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../d002/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Fala Zezé, bom dia cara</title>
+</head>
+
+<body>
+
+    <h1>
+        Fala Zezé, bom dia cara
+    </h1>
+
+    <div class="elements" width="1280">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3h52KJ10Bxw?si=K_WV9xxKMNfaaUo3"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <p>
+        <a href="https://www.youtube.com/c/CanalSamuelVen%C3%A2ncio/videos" target="_blank" rel="external">Veja mais
+            sobre
+            o Cruzeiro</a>
+    </p>
+
+    <div class="elements">
+        <a href="index.html" rel="previous"><img id="button" src="imagens/voltarLight.png"
+                alt="Voltar para página Índice"></a>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    // Atribuí as tags HTML para uma variável
+    var h1Element = document.querySelector("h1");
+    var bodyBackground = document.querySelector("body");
+
+    // Verifica se o tema preferido do usuário é escuro (DARK = TRUE)
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    if (prefersDarkScheme.matches) {
+        document.getElementById('button').src = "imagens/voltarDark.png";
+        h1Element.style.color = "white";
+        bodyBackground.style.backgroundColor = "#121212";
+    } else {
+        document.getElementById('button').src = "imagens/voltarLight.png";
+        h1Element.style.color = "black";
+        bodyBackground.style.backgroundColor = "white";
+    }
+
+    // Você também pode adicionar um listener para detectar mudanças no tema (DARK = TRUE)
+    prefersDarkScheme.addListener((e) => {
+        if (e.matches) {
+            document.getElementById('button').src = "imagens/voltarDark.png";
+            h1Element.style.color = "white";
+            bodyBackground.style.backgroundColor = "#121212";
+        } else {
+            document.getElementById('button').src = "imagens/voltarLight.png";
+            h1Element.style.color = "black";
+            bodyBackground.style.backgroundColor = "white";
+        }
+    });
+
+</script>
