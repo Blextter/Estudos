@@ -8,5 +8,5 @@
 <h1> Exercícios </h1>
 
 <ul>
-    <li><a href="https://blextter.github.io/Estudos/html-css/ex001/">Exercício 01</a>
+    <li><a href="https://blextter.github.io/Estudos/html-css/ex001/">Exercício 01</a></li>
 </ul>
