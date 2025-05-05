@@ -17,6 +17,8 @@
 
 body {
     background-color: #84E1AD;
+    min-width: 250px;
+    max-width: 1345px;
 }
 
 header {
@@ -46,7 +48,8 @@ header>p {
 
 nav {
     display: flex;
-    width: 100%;
+    min-width: 280px;
+    max-width: 1300px;
 }
 
 nav>a {
@@ -56,6 +59,8 @@ nav>a {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
+    min-width: 20px;
+    max-width: 130px;
 }
 
 nav>a:hover {
@@ -131,6 +136,11 @@ main>article>p>strong {
     margin: auto;
 }
 
+picture {
+    display: flex;
+    justify-content: center;
+}
+
 .video {
     background-color: #1A5C38;
     padding: 20px 43px;
@@ -149,7 +159,7 @@ main>article>p>strong {
 aside {
     padding: 15px;
     border-radius: 10px;
-    min-width: 300px;
+    min-width: 280px;
     max-width: 840px;
 }
 
