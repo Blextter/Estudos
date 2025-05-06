@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('espaco.jpg');
+    background-size: cover;
+    width: 99%;
+    height: 95vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
