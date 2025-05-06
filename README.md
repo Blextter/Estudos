@@ -28,6 +28,7 @@
 <li><a href="https://blextter.github.io/Estudos/html-css/ex019/seletor01.html">Exercício 19</a></li>
 <li><a href="https://blextter.github.io/Estudos/html-css/ex020/hover.html">Exercício 20</a></li>
 <li><a href="https://blextter.github.io/Estudos/html-css/ex021/caixa02.html">Exercício 21</a></li>
+<li><a href="https://blextter.github.io/Estudos/html-css/ex022/fundo001.html">Exercício 22</a></li>
 
 <h1> Desafios </h1>
 
