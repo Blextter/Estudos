@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border-color: black;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+
+        input {
+            margin: 10px;
+        }
+
+        fieldset {
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <hr>
+
+    <main>
+        <form action="backend.php" method="get" autocomplete="on">
+            
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div class="insertName">
+                    <label for="idNome">Nome: </label>
+                    <input type="text" name="nome" id="idNome" autocomplete="name" minlength="5" maxlength="20"
+                        required>
+                </div>
+                <div class="insertEmail">
+                    <label for="idEmail">E-mail: </label>
+                    <input type="email" name="email" id="idEmail" autocomplete="email" required>
+                </div>
+                <div class="insertPhone">
+                    <label for="idTelefone">Telefone: </label>
+                    <input type="tel" name="telefone" id="idTelefone" autocomplete="tel" placeholder="(XX)XXXX-XXXX"
+                        pattern="^\(\d{2}\)[0-9]{4}-[0-9]{4}$" maxlength="13" required>
+                </div>
+            </fieldset>
+
+            <!-- Não entendeu? vai estudar RegEx -->
+
+            <div class="formBtn">
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

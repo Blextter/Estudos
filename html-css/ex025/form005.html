@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border-color: black;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+
+        fieldset {
+            margin: 10px;
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <hr>
+
+    <main>
+        <form action="backend.php">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="idSexMasculino" value="M"> <label for="idSexMasculino">Masculinho</label> 
+                <br>
+                <input type="radio" name="sexo" id="idSexFeminino" value="F"> <label for="idSexFeminino">Feminino</label>
+                <p>Não tem outros <img src="https://media.tenor.com/1ZVd8pJXH0EAAAAM/t-roll-trollface.gif" alt="Trolled" style="width: 30px; display: inline-block;"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="espFutebol" id="idEspFutebol"> <label for="idEspFutebol">Futebol</label>
+                <br> 
+                <input type="checkbox" name="espBasquete" id="idEspBasquete"> <label for="idEspBasquete">Basquete</label>
+                <br>
+                <input type="checkbox" name="espNatacao" id="idEspNatacao"> <label for="idEspNatacao">Natação</label>
+                <br>
+                <input type="checkbox" name="espTenis" id="idEspTenis"> <label for="idEspTenis">Tênis</label>
+                <br>
+            </fieldset>
+
+            <div class="formBtn">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
