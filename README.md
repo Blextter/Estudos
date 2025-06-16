@@ -32,7 +32,7 @@
 <li><a href="https://blextter.github.io/Estudos/html-css/ex023/tabela001.html">Exercício 23</a></li>
 <li><a href="https://blextter.github.io/Estudos/html-css/ex024/iframe003.html">Exercício 24</a></li>
 <li><a href="https://blextter.github.io/Estudos/html-css/ex025/form003.html">Exercício 25</a></li>
-<li><a href="https://blextter.github.io/Estudos/html-css/ex026">Exercício 26</a></li>
+<li><a href="https://blextter.github.io/Estudos/html-css/ex026/mq004">Exercício 26</a></li>
 
 <h1> Desafios </h1>
 
