@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* Media Queries */
+
+/* Medium Screens (768px-1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {  
+    body {
+        background: linear-gradient(to top,#59CCD9,#0e3466);
+    }
+
+    section {
+        display: flex;
+        width: 80vw;
+        height: 280px;
+    }
+
+    div#login-image {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+/* Big Screens*/
+@media screen and (min-width: 1024px) {
+    body {
+        background: linear-gradient(to top,#59CCD9,#0e3466);
+    }
+
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 960px;
+        height: 350px;
+    }
+
+    div#login-image {
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 20px;
+        width: 90%;
+        height: 100%;
+    }
+
+    #login-text h1 {
+        font-size: 2em;
+    }
+
+    #login-text p {
+        font-size: 1em;
+        margin: 15px 0px;
+    }
+}
