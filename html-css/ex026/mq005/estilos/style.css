@@ -7,11 +7,11 @@
 }
 
 body,html {
-    background-color: rgb(204, 203, 203);
+    background-color: #d3d3d3;
 }
 
 header {
-    background-color: #181E26;
+    background-color: #262626;
 }
 
 header h1 {
@@ -20,26 +20,44 @@ header h1 {
     padding: 10px;
 }
 
-menu {
-    display: block;
+menu nav {
+    display: none;
 }
 
-menu ul {
+menu nav ul {
     list-style-type: none;
 }
 
-menu ul li a {
-    background-color: #364659;
+menu nav ul li a {
+    background-color: #595959;
     color: white;
-    border-top: 2px solid #566D8C;
+    border-top: 2px solid #8C8C8C;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     display: block;
     padding: 10px;
     text-align: center;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
-menu ul li a:hover {
-    background-color: #93A6BF;
+menu nav ul li a:hover {
+    background-color: #A6A6A6;
+}
+
+i#menu-icon {
+    display: block;
+    background-color: #A6A6A6;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+i#menu-icon:hover {
+    background-color: #F2F2F2;
+    color: #000000;
 }
 
 main {
@@ -56,6 +74,10 @@ main section {
     padding: 10px;
     margin: 10px 0px;
     width: 90vw;
+}
+
+article {
+    padding: 15px;
 }
 
 article h2 {

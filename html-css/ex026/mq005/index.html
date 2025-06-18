@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Media Query</title>
 </head>
 
-<body>
+<body onresize="resizeFix()">
     <header>
         <h1>Meu Site</h1>
+        <i class="material-icons" id="menu-icon" onclick="clickMenu()">menu</i>
         <menu>
-            <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
-            </ul>
+            <nav id="nav-itens">
+                <ul>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                </ul>
+            </nav>
         </menu>
     </header>
 
@@ -43,5 +48,25 @@
         </section>
     </main>
 </body>
+
+<script>
+const navBar = document.querySelector('#nav-itens')
+
+    function clickMenu() {
+        if(navBar.style.display == 'none') {
+            navBar.style.display = "block"
+        }else{
+            navBar.style.display = "none"
+        }
+    }
+
+    function resizeFix() {
+        if (window.innerWidth >= 768) {
+            navBar.style.display = "block"
+        }else{
+            navBar.style.display = "none"
+        }
+    }
+</script>
 
 </html>
