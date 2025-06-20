@@ -51,3 +51,4 @@
 <li><a href="https://blextter.github.io/Estudos/desafios/d013/desafio-13-01.html">Desafio 13</a></li>
 <li><a href="https://blextter.github.io/Estudos/desafios/d014/">Desafio 14</a></li>
 <li><a href="https://blextter.github.io/Estudos/desafios/d015/">Desafio 15</a></li>
+<li><a href="https://blextter.github.io/Estudos/desafios/d016/">Desafio 16</a></li>
