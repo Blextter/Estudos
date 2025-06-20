@@ -11,7 +11,7 @@ E branco também né
 
 /* Configurações Gerais */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -35,8 +35,11 @@ section {
     border: solid 2px #59ccd973;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.450);
+    overflow: hidden;
     width: 75vw;
     height: 515px;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 /* Imagem */
@@ -44,8 +47,6 @@ div#login-image {
     background: #66A3F2 url('../imagens/login-image.jpg');
     background-size: cover;
     background-position: center top;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     width: 100%;
     height: 200px;
 }

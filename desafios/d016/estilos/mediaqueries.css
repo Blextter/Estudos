@@ -15,8 +15,6 @@
     }
 
     div#login-image {
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 20px;
         width: 50%;
         height: 100%;
     }
@@ -36,8 +34,6 @@
     }
 
     div#login-image {
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 20px;
         width: 90%;
         height: 100%;
     }
