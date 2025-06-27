@@ -14,37 +14,39 @@
         h1 {
             text-align: center;
         }
-
+        
         hr {
             border-color: black;
         }
 
         div.container {
             display: flex;
-            background-color: blanchedalmond;
+            flex-flow: row wrap;
+            background-color: darkred;
         }
 
         div.item {
-            background-color: burlywood;
+            flex: auto;
+            background-color: crimson;
             text-align: center;
             border: 1px solid black;
-            flex: auto;
+            padding: 10px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Flexbox</h1>
+    <h1>flex-wrap</h1>
     <hr>
 
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+        <div class="item">Exemplo de Bloco G</div>
     </div>
 </body>
 
