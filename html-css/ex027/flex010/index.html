@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border-color: black;
+        }
+
+        div.container {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: teal;
+        }
+
+        div.grow, div.shrink {
+            background-color: turquoise;
+            flex-basis: 250px;
+            flex-grow: 1;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .grow:nth-child(1) {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        .grow:nth-child(2) {
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        .grow:nth-child(3){
+            flex-shrink: 1;
+            flex-grow: 3;
+        }
+
+        .shrink:nth-child(1) {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        .shrink:nth-child(2) {
+            flex-shrink: 2;
+            flex-grow: 0;
+        }
+
+        .shrink:nth-child(1) {
+            flex-shrink: 3;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-shrink / flex-grow</h1>
+    <hr>
+
+    <div class="container">
+        <div class="grow">grow 1</div>
+        <div class="grow">grow 2</div>
+        <div class="grow">grow 3</div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="shrink">shrink 1</div>
+        <div class="shrink">shrink 2</div>
+        <div class="shrink">shrink 3</div>
+    </div>
+</body>
+
+</html>
