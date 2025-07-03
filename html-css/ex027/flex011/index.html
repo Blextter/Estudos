@@ -22,51 +22,51 @@
         div.container {
             display: flex;
             flex-flow: row nowrap;
-            background-color: teal;
+            background-color: lightslategray;
         }
 
         div.grow, div.shrink {
-            background-color: turquoise;
-            flex-basis: 250px;
+            background-color: aliceblue;
             flex-grow: 1;
             text-align: center;
             border: 1px solid black;
         }
 
+        /* 
+        flex:
+        flex-grow
+        flex-shrink
+        flex-basis
+        */
+
         .grow:nth-child(1) {
-            flex-shrink: 1;
-            flex-grow: 1;
+            flex: 1 1 250px;
         }
 
         .grow:nth-child(2) {
-            flex-shrink: 1;
-            flex-grow: 2;
+            flex: 2 1 250px;
         }
 
         .grow:nth-child(3){
-            flex-shrink: 1;
-            flex-grow: 3;
+            flex: 3 1 250px;
         }
 
         .shrink:nth-child(1) {
-            flex-shrink: 1;
-            flex-grow: 1;
+            flex: 1 1 auto;
         }
 
         .shrink:nth-child(2) {
-            flex-shrink: 2;
-            flex-grow: 1;
+            flex: 1 2 auto;
         }
 
         .shrink:nth-child(3) {
-            flex-shrink: 3;
-            flex-grow: 1;
+            flex: 1 3 auto;
         }
     </style>
 </head>
 
 <body>
-    <h1>flex-shrink / flex-grow</h1>
+    <h1>flex</h1>
     <hr>
 
     <div class="container">
