@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Configurações de Media Query (Mobile) */
+
+@media screen and (max-width: 768px) {
+    header, header nav {
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    header h1 {
+        flex-basis: 30px;
+        margin: 0.5em;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav a {
+        width: 90vw;
+    }
+
+    i#menu-icon {
+        background-color: #FFFFFF;
+        color: #000000;
+        border-bottom: 3px solid #000000;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        width: 95%;
+        padding: 0.4em;
+        margin: 0.4em;
+        transition: all ease-in-out 0.4s;
+    }
+
+    i#menu-icon:active {
+        background-color: #000000;
+        color: #FFFFFF;
+        border-bottom: 3px solid #FFFFFF;
+        transform: scale(1.05);
+    }
+ 
+    header nav a:hover {
+    transform: scale(1.05);
+}
+
+    main {
+        width: 90%;
+    }
+
+    main p {
+        font-size: 1.2em;
+    }
+}
